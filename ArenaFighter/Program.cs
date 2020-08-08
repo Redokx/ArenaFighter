@@ -7,6 +7,7 @@ using Engine;
 
 namespace ArenaFighter
 {
+    
     class Program
     {
 
@@ -15,26 +16,57 @@ namespace ArenaFighter
             Game My_game = new Game();
             My_game.PlayGame();
 
+            
+
+
+        }
         }
     }
-    public class Game
-    {
+public class Game
+{
+     
+    private List<Player> player_list = new List<Player>();
 
-        private List<Player> player_list = new List<Player>();
 
-
-
-        public void PlayGame()
+    
+public void PlayGame()
         {
+        
+        Console.WriteLine("Gracz1:"+"Wybierz swoją klasę postaci \n 1.Warrior \n 2.Mage");
+        int klasa1 = int.Parse(Console.ReadLine());
+        
+        if (klasa1 ==1)
+        {
+            player_list.Add(new Warrior());
+            
+            
+        }
+        else
+        {
+            player_list.Add(new Mage() );
+        }
 
-            player_list.Add(new Player());
-             
+        
+        Console.WriteLine("Gracz2:" + "Wybierz swoją klasę postaci \n 1.Warrior \n 2.Mage");
+        int klasa2 = int.Parse(Console.ReadLine());
+        if (klasa2 == 1)
+        {
+            player_list.Add(new Warrior());
+        }
+        else
+        {
+            player_list.Add(new Mage());
+        }
+        
+
+        
+        player_list.Add(new Player { });
+            player_list.Add(new Player { });
+            player_list.Add(new Player { });
 
 
-            Console.WriteLine("\n\n Welcome to the dartgame! \n" +
-                          "\n Game Rules: Each player throws 3 darts at a time." +
-                          "\n Every throw can be worth 0-20 points." +
-                          "\n Whoever gets 301 points first is the winner!");
+
+        Console.WriteLine();
 
         Console.WriteLine("\nPlayers:");
 
@@ -45,5 +77,5 @@ namespace ArenaFighter
             Console.ReadKey();
         }
     }
-}
+
 
