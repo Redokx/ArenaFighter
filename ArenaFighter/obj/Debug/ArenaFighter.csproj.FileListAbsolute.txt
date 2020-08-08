@@ -1,0 +1,10 @@
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\obj\Debug\ArenaFighter.csprojAssemblyReference.cache
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\obj\Debug\ArenaFighter.csproj.CoreCompileInputs.cache
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\bin\Debug\ArenaFighter.exe.config
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\bin\Debug\ArenaFighter.exe
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\bin\Debug\ArenaFighter.pdb
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\bin\Debug\Engine.dll
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\bin\Debug\Engine.pdb
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\obj\Debug\ArenaFighter.csproj.CopyComplete
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\obj\Debug\ArenaFighter.exe
+C:\Users\Kono\source\repos\ArenaFighter\ArenaFighter\obj\Debug\ArenaFighter.pdb
