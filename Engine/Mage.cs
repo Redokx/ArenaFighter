@@ -21,16 +21,16 @@ namespace Engine
             maxManaPoints = 1000;
             experiencePoints = 0;
             level = 0;
-            ChangeNickName(nickName);
-
+            
+            NickName = nickName;
 
         }
         
-        public void FireBall(int mana)
-        {
-            int damageToPlayer = RandomNumberGenerator.NumberBetween(200, 300);
+        //public void FireBall(int mana)
+        //{
+        //    int damageToPlayer = RandomNumberGenerator.NumberBetween(200, 300);
             
-        }
+        //}
 
         public void ChangeNickName(string nickname)
         {

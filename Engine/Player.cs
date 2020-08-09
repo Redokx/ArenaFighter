@@ -22,16 +22,34 @@ namespace Engine
         protected int ExperiencePoints { get; set; }//(ilość punktów doświadczenia)
         protected int Level { get; set; }//(Poziom)
 
-
-        public void BassicAttack()
+        public String ToString()
         {
-            int damageToPlayer = RandomNumberGenerator.NumberBetween(25, 100);
+            return NickName;
+        }
+
+        public void BassicAttack(Player enemy)
+        {
+            int hit = RandomNumberGenerator.NumberBetween(25, 100);
+            Console.WriteLine(NickName + "attacked with" + hit + "damage");
+            enemy.WasHit(hit);
             StaminaPoints -= 5;
 
         }
 
+        public bool alive()
+        {
+            return (HitPoints > 0);
+        }
         
-        
+        public void WasHit(int hit)
+        {
+            int injury = hit;
+            if (injury>0)
+            {
+                HitPoints -= injury;
+                Console.WriteLine(NickName + "got " + injury +"damage");
+            }
+        }
         
        
 

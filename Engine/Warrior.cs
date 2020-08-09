@@ -18,7 +18,7 @@ namespace Engine
             StaminaPoints = staminaPoints;
             ExperiencePoints = experiencePoints;
             Level = level;
-            ChangeNickName(nickName);
+            NickName = nickName;
         }
 
         public static Warrior CreateDefaultWarrior()
@@ -29,11 +29,14 @@ namespace Engine
 
 
 
-        public void SwordAttack(int stamina)
-        {
-            int damageToPlayer = RandomNumberGenerator.NumberBetween(100, 200);
-            int staminaPoints = -50;
-        }
+        //public void SwordAttack(int stamina)
+        //{
+        //    while( async)
+        //    { 
+        //    int damageToPlayer = RandomNumberGenerator.NumberBetween(100, 200);
+        //    int staminaPoints = -50;
+        //    }
+        //}
 
         public void ChangeNickName(string nickName)
         {
