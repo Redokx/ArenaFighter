@@ -81,10 +81,6 @@ namespace ArenaFighter
             Render();
             while (p1.Alive() && p2.Alive())
             {
-                
-                
-                
-
                 p1.BasicAttack(p2); //player1 attack player2
                 Round++;
                 Render();
@@ -98,11 +94,9 @@ namespace ArenaFighter
                 
                 if (p2.Alive())
                 {
-                    
                     p2.BasicAttack(p1);//player2 attack player1
                     Round++;
                     Render();
-                    
 
                 }
                 if(p2.Get_Hp() < 0)
@@ -110,7 +104,6 @@ namespace ArenaFighter
                     p2.Dead();
                     PrintMesseage(p2.GetLastMessage());
                 }
-                
             }
             Console.ReadLine();
             
@@ -131,14 +124,8 @@ namespace ArenaFighter
                     Console.WriteLine();
                     Console.ReadLine();
                     break;
-
             }
-}
-
-            
-
-
-
         }
-    }
+     }
+}
 
