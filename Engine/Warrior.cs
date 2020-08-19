@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Warrior  : Player
+    public class Warrior : Player
     {
-        
+
         public Warrior(int id, int hitPoints, int maxHitPoints, int staminaPoints, int maxStamina, int experiencePoints, int level, string nickName)
         {
             ID = id;
@@ -20,7 +20,9 @@ namespace Engine
             Level = level;
             NickName = nickName;
         }
+
         
+
 
         //public void SwordAttack(int stamina)
         //{

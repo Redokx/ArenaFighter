@@ -13,10 +13,9 @@ namespace ArenaFighter
         {
             Player first;
             Player second;
-
+            new Mage(1, 50, 200, 200, 25, 5, 5, 5, 5, "test");
             //choose class
-            
-            
+
             int selectedClass1 = ConsoleHelper.MultipleChoice(true, "Warrior", "Mage");
 
             if (selectedClass1 == 0)
@@ -44,10 +43,7 @@ namespace ArenaFighter
 
             Console.WriteLine( "Player2");
             second.ChangeNickName();
-
-
-            Console.WriteLine("chuj");
-            Console.ReadLine();
+            
             Console.Clear();
             Arena arena = new Arena(first, second);
             arena.PlayArena();

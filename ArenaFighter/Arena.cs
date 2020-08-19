@@ -100,8 +100,9 @@ namespace ArenaFighter
                 {
                     
                     p2.BasicAttack(p1);//player2 attack player1
-                    Render();
                     Round++;
+                    Render();
+                    
 
                 }
                 if(p2.Get_Hp() < 0)
