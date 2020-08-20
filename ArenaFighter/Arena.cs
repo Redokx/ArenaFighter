@@ -77,7 +77,6 @@ namespace ArenaFighter
         {
             Console.WriteLine(message);
         }
-
         public void PlayArena()
         {
             Player p1 = first;
