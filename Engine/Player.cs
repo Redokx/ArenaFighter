@@ -32,10 +32,39 @@ namespace Engine
             
             int hit = RandomNumberGenerator.NumberBetween(25, 100);
             Console.WriteLine(NickName + " attacked with " + hit + " damage");
-            
             enemy.WasHit(hit);
-            StaminaPoints -= 5;
-            
+            StaminaPoints -= 5;  
+
+        }
+
+        public void TrippleSwing(Player enemy) //attack enemy player
+        {
+
+            int hit = RandomNumberGenerator.NumberBetween(200, 600);
+            Console.WriteLine(NickName + " attacked with " + hit + " damage");
+            enemy.WasHit(hit);
+            StaminaPoints -= 60;
+        }
+
+        public void FireBall(Player enemy) //attack enemy player
+        {
+
+            int hit = RandomNumberGenerator.NumberBetween(300, 1000);
+            Console.WriteLine(NickName + " attacked with " + hit + " damage");
+            enemy.WasHit(hit);
+            ManaPoints -= 60;
+        }
+
+        public void Rest()
+        {
+            int rest = RandomNumberGenerator.NumberBetween(10, 50);
+            int rest2 = RandomNumberGenerator.NumberBetween(10, 50);
+            if (StaminaPoints <= 100 && ManaPoints <=100)
+            { 
+             StaminaPoints += rest;
+            ManaPoints += rest2;
+            }
+            message = (NickName + " rested a while and replenish: " + rest + " stamina and " + rest2 + " mana");
         }
 
         public bool Alive()
@@ -60,24 +89,28 @@ namespace Engine
         {
             if (HitPoints <= 0)
             {
-                HitPoints = 0;
+                
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Game Over");
+                Console.ResetColor();
+
                 message += " and died \n" + Get_NickName() + " lost the battle";
                 
             }
             SetMessage(message);
-
+            
         }
 
+        public int Get_ID()
+        {
+            return ID;
         
+        }
 
-public int Get_Hp()
+        public int Get_Hp()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             return HitPoints;
-            
-
         }
 
         public int Get_Stamina()
@@ -85,6 +118,12 @@ public int Get_Hp()
             Console.ForegroundColor = ConsoleColor.Green;
             return StaminaPoints;
         }
+        public int Get_Mana()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            return ManaPoints;
+        }
+
         public string Get_NickName()
         { 
             return NickName;
@@ -100,18 +139,14 @@ public int Get_Hp()
         protected void SetMessage(string message)
         {
             this.message = message;
-            
-            
         }
 
         public string GetLastMessage()
         {
-            
-            
             return message;
-            
         }
-        
+
+
     }
         
        

@@ -13,18 +13,16 @@ namespace ArenaFighter
         {
             Player first;
             Player second;
-            new Mage(1, 50, 200, 200, 25, 5, 5, 5, 5, "test");
+            
             //choose class
-
             int selectedClass1 = ConsoleHelper.MultipleChoice(true, "Warrior", "Mage");
-
             if (selectedClass1 == 0)
             {
-                first = new Warrior(1, 150, 200, 200, 25, 5, 5, "test");
+                first = new Warrior(1, 5000, 5000, 100, 100, 100, 100, 0, 0, "test");
             }
             else
             {
-                first = new Mage(1, 50, 200, 200, 25, 5, 5, 5, 5, "test");
+                first = new Mage(2, 2000, 2000, 100, 100, 100, 5, 0, 0, "test");
             }
             Console.WriteLine("Player1");
             first.ChangeNickName();
@@ -34,11 +32,11 @@ namespace ArenaFighter
 
             if (selectedClass2 == 0)
             {
-                second = new Warrior(2, 150, 200, 200, 25, 5, 5, "test");
+                second = new Warrior(3, 5000, 5000, 100, 100, 100, 100, 0, 0, "test");
             }
             else
             {
-                second = new Mage(2, 50, 200, 200, 25, 5, 5, 5, 5, "test");
+                second = new Mage(4, 2000, 2000, 100, 100, 100, 5, 0, 0, "test");
             }
 
             Console.WriteLine( "Player2");

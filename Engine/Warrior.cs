@@ -9,13 +9,15 @@ namespace Engine
     public class Warrior : Player
     {
 
-        public Warrior(int id, int hitPoints, int maxHitPoints, int staminaPoints, int maxStamina, int experiencePoints, int level, string nickName)
+        public Warrior(int id, int hitPoints, int maxHitPoints, int staminaPoints, int maxStamina, int manaPoints, int maxManaPoints, int experiencePoints, int level, string nickName)
         {
             ID = id;
             HitPoints = hitPoints;
             MaxHitPoints = maxHitPoints;
             StaminaPoints = staminaPoints;
             MaxStamina = maxStamina;
+            ManaPoints = manaPoints;
+            MaxManaPoints = maxManaPoints;
             ExperiencePoints = experiencePoints;
             Level = level;
             NickName = nickName;
